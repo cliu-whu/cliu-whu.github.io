@@ -306,8 +306,7 @@
     &:last-of-type { margin-right: 0 }
     a {
       display: block;
-      padding: 10px 12px;
-      border: 1px solid $border-color-01;
+      padding: 0px;
       &:hover { border-color: $border-color-02 }
     }
   }
