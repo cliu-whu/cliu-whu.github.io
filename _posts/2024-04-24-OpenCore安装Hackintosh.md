@@ -7,7 +7,6 @@ categories: Unix_Linux
 # 1 总览
 ## 1.1 引导文件目录结构
 需要准备的EFI引导文件目录结构及部分关键文件从Github下载：[GitHub - acidanthera/OpenCorePkg: OpenCore bootloader](https://github.com/acidanthera/OpenCorePkg)<br />解压出X64目录下的EFI文件夹，EFI引导文件为以下几种：
-
 - Drivers &emsp;&emsp;&nbsp;核心驱动
 - Kexts &emsp;&emsp;&emsp;黑苹果与硬件联系的主要驱动
 - ACPI &emsp;&emsp;&emsp;&nbsp;硬件信息描述文件
