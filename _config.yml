@@ -1,9 +1,12 @@
-title: Main
+title: Home
 author:
   name: cliu-whu
   email: liucongns@whu.edu.cn
 description: >- # this means to ignore newlines until "baseurl:"
   This is the blog site of Cong Liu.
+longdescription: 
+  - This is the blog site of Cong Liu.
+  - 疾风亦有归途。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # markdown: kramdown
@@ -13,18 +16,13 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # remote_theme: pages-themes/leap-day@v0.2.0
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+
+# header_pages:
+#   - about.md
 
 # Minima specific settings, which are only available from Minima 3.0 onward.
 minima:
-  # Minima skin selection.
-  # Available skins are:
-  # classic	           Default, light color scheme.
-  # dark	             Dark variant of the classic skin.
-  # auto	             Adaptive skin based on the default classic and dark skins.
-  # solarized-light	   Light variant of solarized color scheme.
-  # solarized-dark	   Dark variant of solarized color scheme.
-  # solarized	         Adaptive skin for solarized color scheme skins.
-  skin: classic
   
   # Minima date format.
   # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 
@@ -37,7 +35,7 @@ minima:
   #  - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
   #  - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
    - { platform: github,         user_url: "https://github.com/cliu-whu" }
-   - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
+   - { platform: google_scholar, user_url: "https://scholar.google.com/" }
    - { platform: researchgate,   user_url: "https://www.researchgate.net/profile/Cong-Liu-57" }
    - { platform: orcid,          user_url: "https://orcid.org/my-orcid?orcid=0000-0001-7059-5749" }
   #  - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }

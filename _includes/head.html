@@ -9,6 +9,9 @@
     {%- include google-analytics.html -%}
   {%- endif -%}
 
-  {%- include custom-head.html -%}
+  <!-- for mathjax support -->
+  {% if page.usemathjax %}
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+  {% endif %}
   
 </head>

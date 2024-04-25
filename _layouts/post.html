@@ -48,17 +48,18 @@ layout: base
       </section>
       <div class="categories-nav">
         <h3>
-        浏览{{page.categories[0]}}的其他文章
+          {%- assign page_cate = page.categories[0] -%}
+          浏览{{page_cate}}的其他文章
         </h3>
         <ul>
-          {%- for post in site.posts -%}
-          {%- if post.categories == page.categories and post != page -%}
-          <li>
-              <a href="{{ post.url | relative_url }}">
-                {{ post.title | escape }}
-              </a>
-          </li>
-          {%- endif -%}
+          {%- for post in site.categories[page_cate] -%}
+            {%- if post != page -%}
+            <li>
+                <a href="{{ post.url | relative_url }}">
+                  {{ post.title | escape }}
+                </a>
+            </li>
+            {%- endif -%}
           {%- endfor -%}
         </ul>
       </div>
@@ -69,5 +70,4 @@ layout: base
     {%- include disqus_comments.html -%}
   {%- endif -%}
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

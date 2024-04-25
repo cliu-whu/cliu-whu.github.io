@@ -2,17 +2,20 @@
  * Site header
  */
 .site-header {
+  background-color: $head-background-color;
+  box-shadow: 0 4px 8px rgba(153, 189, 232, 0.7);
   border-top: 5px solid $border-color-03;
-  border-bottom: 1px solid $border-color-01;
-  min-height: $spacing-unit * 1.865;
-  line-height: $base-line-height * $base-font-size * 2.25;
-
-  // Positioning context for the mobile navigation icon
-  position: relative;
+  // border-bottom: 1px solid $border-color-01;
+  min-height: $spacing-unit * 1.2;
+  line-height: $base-line-height * $base-font-size * 2;
+  position: sticky;
+  top: 0;
+  opacity:0.95;
+  z-index:1;
 }
 
 .site-title {
-  @include relative-font-size(1.625);
+  @include relative-font-size(2.25);
   font-weight: 300;
   letter-spacing: -1px;
   margin-bottom: 0;
@@ -122,7 +125,7 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $border-color-01;
+  border-top: 1px solid $post-background-color;
   padding: $spacing-unit 0;
 }
 
@@ -131,8 +134,10 @@
   margin-bottom: $spacing-unit * .5;
 }
 
-.feed-subscribe .svg-icon {
-  padding: 5px 5px 2px 0
+.feed-subscribe,
+.svg-icon {
+  padding: 5px 5px 2px 0;
+  margin-bottom: 0;
 }
 
 .contact-list,
@@ -145,10 +150,6 @@
 .social-links {
   @include relative-font-size(0.9375);
   color: $brand-color;
-}
-
-.footer-col {
-  margin-bottom: $spacing-unit * .5;
 }
 
 .footer-col-1,
@@ -238,6 +239,7 @@
  * Posts
  */
 .post-header {
+  padding-top: $spacing-unit;
   margin-bottom: $spacing-unit;
 }
 
@@ -302,7 +304,25 @@
   margin: 0 auto;
   li {
     float: left;
-    margin: 5px 10px 5px 0;
+    margin: 5px 15px 5px 0;
+    &:last-of-type { margin-right: 0 }
+    a {
+      display: block;
+      padding: 0px;
+      &:hover { border-color: $border-color-02 }
+    }
+  }
+}
+
+.main-post-list {
+  list-style: none;
+  margin-left: 0;
+  display: table;
+  margin: 0 auto;
+  li {
+    float: left;
+    min-width: 220px;
+    margin: 5px 15px 5px 0;
     &:last-of-type { margin-right: 0 }
     a {
       display: block;
