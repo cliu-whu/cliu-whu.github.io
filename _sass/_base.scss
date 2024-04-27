@@ -223,6 +223,10 @@ pre {
   padding-left: $spacing-unit;
   @extend %clearfix;
 
+  @media screen and (min-width: $on-tiny) {
+    width: 800px - $spacing-unit * 2;
+  }
+
   @media screen and (min-width: $on-large) {
     max-width: 1000px - $spacing-unit * 2;
     width: 1000px - $spacing-unit * 2;

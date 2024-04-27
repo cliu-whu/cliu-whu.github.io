@@ -89,7 +89,7 @@
     margin-left: 20px;
   }
 
-  @media screen and (min-width: $on-medium) {
+  @media screen and (min-width: $on-tiny) {
     position: static;
     float: right;
     border: none;
@@ -175,7 +175,7 @@
   }
 }
 
-@media screen and (min-width: $on-medium) {
+@media screen and (min-width: $on-tiny) {
   .footer-col-wrapper {
     display: flex
   }
@@ -208,6 +208,7 @@
 
 .page-heading {
   @include relative-font-size(2);
+  text-align:left;
 }
 
 .post-list-heading {
@@ -332,7 +333,7 @@
   list-style: none;
   margin-left: 0;
   display: table;
-  margin: 0 auto;
+  margin-bottom: $spacing-unit;
   li {
     float: left;
     min-width: 220px;

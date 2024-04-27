@@ -6,7 +6,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is the blog site of Cong Liu.
 longdescription: 
   - This is the blog site of Cong Liu.
-  - 疾风亦有归途。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # markdown: kramdown
