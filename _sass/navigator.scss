@@ -1,20 +1,22 @@
-section {
-  max-width: calc(#{$content-width} - (#{$spacing-unit}));
-  padding-right: $spacing-unit * .5;
-  padding-left: $spacing-unit * .5;
-  padding: 0px 0px 0px 0px;
+.nav-position {
+  width: $nav-width;
+  height: $nav-width;
   position:relative;
-  border-radius: 3px;
+  float:left;
 }
 
-.poster-nav {
-  width: 230px;
-  position: fixed;
-  top: 70px;
-  left:0%;
-  margin-left:0px;
+.nav-content {
+  border-radius: 3px;
+  background-color: $post-background-color;
+  width: $nav-width - $spacing-unit;
+  margin-left: $spacing-unit * .5;
+  margin-right: $spacing-unit * .5;
+  position:fixed;
+  top: 68px;
   text-align: left;
+}
 
+.nav-poster {
   h3 {
     margin-left:30px
   }
@@ -28,9 +30,6 @@ section {
     li {
       padding: 5px 0px;
       line-height: 16px;
-      // padding-right:17px;
-      // position:relative;
-      // right:-12px;
 
       &.tag-h1 {
         font-size: 1.2em;
@@ -52,24 +51,14 @@ section {
       &:hover { color: #999; }
     }
 
-    // .active {
-    //   border-right:solid 4px #39C;
-    //   padding-right:13px;
-    // }
   }
 }
 
-.categories-nav {
-  width: 230px;
-  position: fixed;
-  top: 70px;
-  right:2%;
-  text-align: right;
-
+.nav-categories {
   ul {
     list-style: none;
     list-style-image:none;
-    font-size: 14px;
+    font-size: 16px;
     line-height:24px;
 
     li {
@@ -79,14 +68,24 @@ section {
   }
 }
 
-@media print, screen and (max-width: 1280px) {
-  .poster-nav{
+@media print, screen and (max-width: $on-medium) {
+  .nav-categories {
+  width: 800px;
+  position: relative;
+  left: 142.5px;
+  top: 10px;
+  text-align: left;
+  }
+}
+
+@media print, screen and (max-width: $on-small) {
+  .nav-poster {
     display: none;
   }
-  .categories-nav {
-    width: 400px;
-    position: static;
-    top: 0px;
-    text-align: left;
+  .nav-categories {
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 10px;
   }
 }

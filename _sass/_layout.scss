@@ -202,7 +202,7 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  padding: $spacing-unit * .5 0;
   flex: 1 0 auto;
 }
 
@@ -233,11 +233,25 @@
   @include relative-font-size(1.5);
 }
 
-
-
 /**
  * Posts
  */
+.post-page {
+  margin:auto;
+  max-width: $on-large - 20px;
+  height: 100px;
+  @media print, screen and (max-width: $on-large) {
+    max-width: $on-medium - 20px;
+  }
+  @media print, screen and (max-width: $on-medium) {
+    max-width: $on-small - 20px;
+  }
+  @media print, screen and (max-width: $on-small) {
+    max-width: $on-tiny - 20px;
+  }
+}
+
+
 .post-header {
   padding-top: $spacing-unit;
   margin-bottom: $spacing-unit;

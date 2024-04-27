@@ -6,6 +6,20 @@ layout: base
   <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </head>
+
+<div class="post-page">
+
+<div class="nav-position nav-poster">
+  <nav class="nav-content nav-poster">
+    <h3>
+      <a href="{{ post.url | relative_url }}">
+        {{ page.title | escape }}
+      </a>
+    </h3>
+    <ul></ul>
+  </nav>
+</div>
+
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -32,38 +46,11 @@ layout: base
   </header>
 
   <body>
-    <div>
-      <nav class="poster-nav">
-        <h3>
-          <a href="{{ post.url | relative_url }}">
-            {{ page.title | escape }}
-          </a>
-        </h3>
-        <ul></ul>
-      </nav>
       <section>
         <div class="post-content e-content" itemprop="articleBody">
           {{ content }}
         </div>
       </section>
-      <div class="categories-nav">
-        <h3>
-          {%- assign page_cate = page.categories[0] -%}
-          浏览{{page_cate}}的其他文章
-        </h3>
-        <ul>
-          {%- for post in site.categories[page_cate] -%}
-            {%- if post != page -%}
-            <li>
-                <a href="{{ post.url | relative_url }}">
-                  {{ post.title | escape }}
-                </a>
-            </li>
-            {%- endif -%}
-          {%- endfor -%}
-        </ul>
-      </div>
-    </div>
   </body>
 
   {%- if site.disqus.shortname -%}
@@ -71,3 +58,25 @@ layout: base
   {%- endif -%}
 
 </article>
+
+<div class="nav-position nav-categories">
+  <div class="nav-content nav-categories">
+    <h3>
+      {%- assign page_cate = page.categories[0] -%}
+      &emsp;&nbsp;浏览{{page_cate}}的其他文章
+    </h3>
+    <ul>
+      {%- for post in site.categories[page_cate] -%}
+        {%- if post != page -%}
+        <li>
+            <a href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+        </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
+
+</div>
