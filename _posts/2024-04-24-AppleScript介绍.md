@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AppleScript介绍"
-categories: Unix_Linux
+categories: Unix-like
 ---
 
 > AppleScript 是一种功能强大的、通用的脚本语言，它内嵌在 OS X 中。可以使用 AppleScript 创建快捷、自动执行重复任务，甚至制作可以节省您很多时间的自定应用程序。AppleScript 可让您控制可脚本控制的应用程序。

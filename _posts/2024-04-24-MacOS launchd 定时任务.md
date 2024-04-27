@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MacOS launchd 定时任务"
-categories: Unix_Linux
+categories: Unix-like
 ---
 
 > macOS 使用 launchd 进程来管理守护进程和代理，而您还可以用它来运行 shell 脚本。您不与 launchd 直接交互，而是使用 launchctl 工具来载入或卸载 launchd 守护进程和代理。

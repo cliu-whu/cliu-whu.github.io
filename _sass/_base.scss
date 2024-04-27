@@ -216,20 +216,21 @@ pre {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
   border-radius: 3px;
   background-color: $post-background-color;
-  max-width: 800px - $spacing-unit * 2;
-  position:relative;
-  float:left;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  float: left;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
   @extend %clearfix;
 
   @media screen and (min-width: $on-tiny) {
-    width: 800px - $spacing-unit * 2;
+    width: 800px;
   }
 
   @media screen and (min-width: $on-large) {
-    max-width: 1000px - $spacing-unit * 2;
-    width: 1000px - $spacing-unit * 2;
+    max-width: 1000px;
+    width: 1000px;
   }
 }
 

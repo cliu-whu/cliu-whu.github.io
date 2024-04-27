@@ -239,16 +239,16 @@
  */
 .post-page {
   margin:auto;
-  max-width: $on-large - 20px;
+  max-width: $on-tiny - 20px;
   height: 100px;
-  @media print, screen and (max-width: $on-large) {
-    max-width: $on-medium - 20px;
-  }
-  @media print, screen and (max-width: $on-medium) {
+  @media print, screen and (min-width: $on-small) {
     max-width: $on-small - 20px;
   }
-  @media print, screen and (max-width: $on-small) {
-    max-width: $on-tiny - 20px;
+  @media print, screen and (min-width: $on-medium) {
+    max-width: $on-medium - 20px;
+  }
+  @media print, screen and (min-width: $on-large) {
+    max-width: $on-large - 20px;
   }
 }
 

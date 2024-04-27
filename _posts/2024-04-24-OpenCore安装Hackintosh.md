@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OpenCore安装Hackintosh"
-categories: Unix_Linux
+categories: Unix-like
 ---
 
 # 1 总览
