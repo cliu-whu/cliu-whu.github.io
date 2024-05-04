@@ -12,22 +12,15 @@
             </svg><span>Subscribe</span>
           </a>
         </p>
-      {%- if site.author %}
-        <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {%- endif %}
-        </ul>
+      {%- if site.email %}
+        <a class="u-email" href="mailto:{{ site.author.email }}">{{ site.email }}</a>
       {%- endif %}
       </div>
       <div class="footer-col">
         {% for text in site.longdescription -%}
           <p>{{ text | escape }}</p>
         {%- endfor %}
-        Source Code is available at <a href="https://github.com/cliu-whu/cliu-whu.github.io">https://github.com/cliu-whu/cliu-whu.github.io</a>
+        Source Code is available at <a href="https://github.com/cliu-whu/cliu-whu.github.io">here</a>.
       </div>
     </div>
 

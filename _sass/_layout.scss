@@ -3,14 +3,14 @@
  */
 .site-header {
   background-color: $head-background-color;
-  box-shadow: 0 4px 8px rgba(153, 189, 232, 0.7);
-  border-top: 5px solid $border-color-03;
-  // border-bottom: 1px solid $border-color-01;
+  // box-shadow: 0 4px 8px rgba(153, 189, 232, 0.7);
+  // border-top: 5px solid $border-color-03;
+  border-bottom: 1px solid $border-color-01;
   min-height: $spacing-unit * 1.2;
   line-height: $base-line-height * $base-font-size * 2;
   position: sticky;
   top: 0;
-  opacity:0.95;
+  opacity:1;
   z-index:1;
 }
 
@@ -125,8 +125,9 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $post-background-color;
-  padding: $spacing-unit 0;
+  background-color: $head-background-color;
+  border-top: 1px solid $border-color-01;
+  padding: $spacing-unit * .5 0;
 }
 
 .footer-heading {
@@ -202,13 +203,17 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit * .5 0;
+  // padding: $spacing-unit * .5 0;
   flex: 1 0 auto;
 }
 
 .page-heading {
   @include relative-font-size(2);
   text-align:left;
+}
+
+.post-list-block {
+  background-color: #ffffff;
 }
 
 .post-list-heading {
@@ -238,9 +243,9 @@
  * Posts
  */
 .post-page {
-  margin:auto;
+  margin: auto;
   max-width: $on-tiny - 20px;
-  height: 100px;
+  display: flex;
   @media print, screen and (min-width: $on-small) {
     max-width: $on-small - 20px;
   }
@@ -346,35 +351,6 @@
     }
   }
 }
-
-
-
-/**
- * Pagination navbar
- */
-.pagination {
-  margin-bottom: $spacing-unit;
-  @extend .social-media-list;
-  li {
-    a, div {
-      min-width: 41px;
-      text-align: center;
-      box-sizing: border-box;
-    }
-    div {
-      display: block;
-      padding: $spacing-unit * .25;
-      border: 1px solid transparent;
-
-      &.pager-edge {
-        color: $border-color-01;
-        border: 1px dashed;
-      }
-    }
-  }
-}
-
-
 
 /**
  * Grid helpers
