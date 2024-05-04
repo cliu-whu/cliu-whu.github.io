@@ -18,7 +18,7 @@
       </div>
       <div class="footer-col">
         {% for text in site.longdescription -%}
-          <p>{{ text | escape }}</p>
+          {{ text | escape }}<br/>
         {%- endfor %}
         Source Code is available at <a href="https://github.com/cliu-whu/cliu-whu.github.io">here</a>.
       </div>

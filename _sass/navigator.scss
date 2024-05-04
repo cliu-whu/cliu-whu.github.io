@@ -1,6 +1,6 @@
 .nav-position {
   width: $nav-width;
-  height: $nav-width;
+  min-height: $nav-width;
   position:relative;
   float:left;
 }
@@ -66,11 +66,12 @@
 @media print, screen and (max-width: $on-medium) {
   .nav-categories {
   width: 800px;
+  min-height: auto;
   margin: 0;
+  padding-bottom: $spacing-unit * .5;
   position: relative;
-  float:right;
-  top: 10px;
-  text-align: left;
+  float: right;
+  top: 0px;
   }
 }
 
@@ -80,8 +81,5 @@
   }
   .nav-categories {
     width: 100%;
-    position: relative;
-    left: 0px;
-    top: 10px;
   }
 }

@@ -35,7 +35,6 @@
   position: absolute;
   top: 9px;
   right: $spacing-unit * .5;
-  background-color: $background-color;
   border: 1px solid $border-color-01;
   border-radius: 5px;
   text-align: right;
@@ -72,6 +71,7 @@
   }
 
   input:checked ~ .trigger {
+    background-color: $head-background-color;
     display: block;
     padding-bottom: 5px;
   }
@@ -245,7 +245,7 @@
 .post-page {
   margin: auto;
   max-width: $on-tiny - 20px;
-  display: flex;
+  min-height: 300px;
   @media print, screen and (min-width: $on-small) {
     max-width: $on-small - 20px;
   }
