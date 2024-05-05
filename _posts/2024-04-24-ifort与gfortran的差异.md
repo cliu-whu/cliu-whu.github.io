@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ifort/gfortran差异"
+title: "ifort与gfortran的差异"
 categories: Code
 ---
 
