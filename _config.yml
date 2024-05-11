@@ -33,7 +33,7 @@ minima:
   #  - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
   #  - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
    - { platform: github,         user_url: "https://github.com/cliu-whu" }
-   - { platform: google_scholar, user_url: "https://scholar.google.com/" }
+   - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=SyTx4woAAAAJ" }
    - { platform: researchgate,   user_url: "https://www.researchgate.net/profile/Cong-Liu-57" }
    - { platform: orcid,          user_url: "https://orcid.org/my-orcid?orcid=0000-0001-7059-5749" }
   #  - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
