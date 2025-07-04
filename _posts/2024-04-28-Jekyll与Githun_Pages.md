@@ -68,3 +68,10 @@ Liquid: [https://learn.microsoft.com/zh-cn/training/modules/power-pages-liquid/b
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 ```
 网络上的给出的脚本有多个，它们显示的公式字体有可能有差异。
+# 4 问题解决
+Github Pages的页面编译失败，未更新，本地运行以下命令：
+```
+bundle update --bundler
+bundle install
+```
+Gemfile.lock会更新，提交至Github仓库即可，具体机制未研究。
